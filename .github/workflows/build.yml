@@ -21,3 +21,13 @@ jobs:
 
     - name: Build with Gradle
       run: ./gradlew build
+
+    - name: Upload the Build Artifact
+
+      uses: actions/upload-artifact@v2
+
+      with:
+
+    - name: :app
+
+      path: ./build/libs/:app.apk
